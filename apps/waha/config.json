@@ -22,7 +22,7 @@
       "required": false
     },
     {
-      "label": "Whatsapp Default Engine",
+      "label": "Whatsapp Hook Events",
       "type": "text",
       "env_variable": "WHATSAPP_HOOK_EVENTS",
       "required": false
