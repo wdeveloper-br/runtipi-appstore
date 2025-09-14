@@ -1,0 +1,38 @@
+{
+  "name": "Waha - API WhatsApp",
+  "id": "waha",
+  "description": "Uma API REST não-oficial para WhatsApp, criada a partir de um cliente NodeJS.",
+  "available": true,
+  "exposable": true,
+  "dynamic_config": true,
+  "port": 3000,
+  "version": "v0.0.1",
+  "categories": [
+    "utilities"
+  ],
+  "author": "WDeveloper",
+  "source": "https://github.dev/wdeveloper-br/runtipi-appstore",
+  "form_fields": [
+    {
+      "label": "Whatsapp Hook URL",
+      "type": "text",
+      "env_variable": "WHATSAPP_HOOK_URL",
+      "required": false
+    },
+    {
+      "label": "Whatsapp Default Engine",
+      "type": "text",
+      "env_variable": "WHATSAPP_HOOK_EVENTS",
+      "required": false
+    },
+    {
+      "label": "Whatsapp Default Engine",
+      "type": "text",
+      "env_variable": "WHATSAPP_DEFAULT_ENGINE",
+      "required": false
+    }
+  ],
+  "supported_architectures": ["arm64", "amd64"],
+  "created_at": 1691943801422,
+  "updated_at": 1756237838379
+}
