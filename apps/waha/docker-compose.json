@@ -1,23 +1,25 @@
 {
-  "services": {
-    "name": "waha",
-    "image": "devlikeapro/waha",
-    "isMain": true,
-    "internalPort": 3000,
-    "volumes": [
+  "services": [
       {
-        "hostPath": "${APP_DATA_DIR}/data/media",
-        "containerPath": "/app/.media"
-      },
-      {
-        "hostPath": "${APP_DATA_DIR}/data/sessions",
-        "containerPath": "/app/.sessions"
+      "name": "waha",
+      "image": "devlikeapro/waha",
+      "isMain": true,
+      "internalPort": 3000,
+      "volumes": [
+        {
+          "hostPath": "${APP_DATA_DIR}/data/media",
+          "containerPath": "/app/.media"
+        },
+        {
+          "hostPath": "${APP_DATA_DIR}/data/sessions",
+          "containerPath": "/app/.sessions"
+        }
+      ],
+      "environment": {
+        "WHATSAPP_HOOK_URL": "${WHATSAPP_HOOK_URL}",
+        "WHATSAPP_HOOK_EVENTS": "${WHATSAPP_HOOK_EVENTS}",
+        "WHATSAPP_DEFAULT_ENGINE": "${WHATSAPP_DEFAULT_ENGINE}"
       }
-    ],
-    "environment": {
-      "WHATSAPP_HOOK_URL": "${WHATSAPP_HOOK_URL}",
-      "WHATSAPP_HOOK_EVENTS": "${WHATSAPP_HOOK_EVENTS}",
-      "WHATSAPP_DEFAULT_ENGINE": "${WHATSAPP_DEFAULT_ENGINE}"
     }
-  }
+  ]
 }
