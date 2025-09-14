@@ -2,11 +2,13 @@
   "name": "Waha - API WhatsApp",
   "id": "waha",
   "description": "Uma API REST não-oficial para WhatsApp, criada a partir de um cliente NodeJS.",
+  "short_desc": "Uma API REST não-oficial para WhatsApp",
   "available": true,
   "exposable": true,
   "dynamic_config": true,
   "port": 3000,
   "version": "v0.0.1",
+  "tipi_version": 3,
   "categories": [
     "utilities", "automation"
   ],
