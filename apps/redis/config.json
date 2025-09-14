@@ -1,0 +1,41 @@
+{
+  "name": "Redis",
+  "id": "redis",
+  "available": true,
+  "short_desc": "O Redis é um armazenamento de estrutura de dados em memória de código aberto, usado como banco de dados, cache e agente de mensagens.",
+  "author": "WDeveloper",
+  "port": 6379,
+  "categories": [
+    "data"
+  ],
+  "description": "",
+  "tipi_version": 3,
+  "version": "v0.0.1",
+  "source": "https://github.com/wdeveloper-br/runtipi-appstore",
+  "exposable": true,
+  "dynamic_config": true,
+  "supported_architectures": [
+    "arm64",
+    "amd64"
+  ],
+  "form_fields": [
+    {
+      "label": "REDIS_USER",
+      "type": "text",
+      "env_variable": "REDIS_USER",
+      "required": true,
+      "hint": "root",
+      "default": "root"
+    },
+    {
+      "label": "REDIS_PASSWORD",
+      "type": "password",
+      "env_variable": "REDIS_PASSWORD",
+      "required": true,
+      "min": 12,
+      "max": 128
+    }
+  ],
+  "created_at": 1691943801422,
+  "updated_at": 1757834133533
+}

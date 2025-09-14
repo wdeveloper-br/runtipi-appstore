@@ -1,0 +1,14 @@
+{
+  "services": [
+    {
+      "name": "redis",
+      "image": "redis:latest",
+      "isMain": true,
+      "internalPort": "6379",
+      "environment": {
+        "REDIS_USER": "${REDIS_USER}",
+        "REDIS_PASSWORD": "${REDIS_PASSWORD}"
+      }
+    }
+  ]
+}
