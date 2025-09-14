@@ -7,7 +7,7 @@
   "exposable": true,
   "dynamic_config": true,
   "port": 3000,
-  "version": "v0.0.2",
+  "version": "v0.0.3",
   "tipi_version": 3,
   "categories": [
     "utilities", "automation"
@@ -16,28 +16,28 @@
   "source": "https://github.com/wdeveloper-br/runtipi-appstore",
   "form_fields": [
     {
-      "label": "Whatsapp Hook URL",
+      "label": "WHATSAPP_HOOK_URL",
       "type": "text",
       "env_variable": "WHATSAPP_HOOK_URL",
       "required": false,
-      "hint": "WHATSAPP_HOOK_URL",
-      "default": "WHATSAPP_HOOK_URL"
+      "hint": "http://n8n.tipi.local/webhook-test/webhook",
+      "default": "http://n8n.tipi.local/webhook-test/webhook"
     },
     {
-      "label": "Whatsapp Hook Events",
+      "label": "WHATSAPP_HOOK_EVENTS",
       "type": "text",
       "env_variable": "WHATSAPP_HOOK_EVENTS",
       "required": false,
-      "hint": "WHATSAPP_HOOK_EVENTS",
-      "default": "WHATSAPP_HOOK_EVENTS"
+      "hint": "message",
+      "default": "message"
     },
     {
-      "label": "Whatsapp Default Engine",
+      "label": "WHATSAPP_DEFAULT_ENGINE",
       "type": "text",
       "env_variable": "WHATSAPP_DEFAULT_ENGINE",
       "required": false,
-      "hint": "WHATSAPP_DEFAULT_ENGINE",
-      "default": "WHATSAPP_DEFAULT_ENGINE"
+      "hint": "GOWS",
+      "default": "GOWS"
     }
   ],
   "supported_architectures": ["arm64", "amd64"],
