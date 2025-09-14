@@ -8,10 +8,10 @@
   "port": 3000,
   "version": "v0.0.1",
   "categories": [
-    "utilities"
+    "utilities", "automation"
   ],
   "author": "WDeveloper",
-  "source": "https://github.dev/wdeveloper-br/runtipi-appstore",
+  "source": "https://github.com/wdeveloper-br/runtipi-appstore",
   "form_fields": [
     {
       "label": "Whatsapp Hook URL",
