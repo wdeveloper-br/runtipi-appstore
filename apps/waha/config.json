@@ -7,7 +7,7 @@
   "exposable": true,
   "dynamic_config": true,
   "port": 3000,
-  "version": "v0.0.1",
+  "version": "v0.0.2",
   "tipi_version": 3,
   "categories": [
     "utilities", "automation"
@@ -19,19 +19,25 @@
       "label": "Whatsapp Hook URL",
       "type": "text",
       "env_variable": "WHATSAPP_HOOK_URL",
-      "required": false
+      "required": false,
+      "hint": "WHATSAPP_HOOK_URL",
+      "default": "WHATSAPP_HOOK_URL"
     },
     {
       "label": "Whatsapp Hook Events",
       "type": "text",
       "env_variable": "WHATSAPP_HOOK_EVENTS",
-      "required": false
+      "required": false,
+      "hint": "WHATSAPP_HOOK_EVENTS",
+      "default": "WHATSAPP_HOOK_EVENTS"
     },
     {
       "label": "Whatsapp Default Engine",
       "type": "text",
       "env_variable": "WHATSAPP_DEFAULT_ENGINE",
-      "required": false
+      "required": false,
+      "hint": "WHATSAPP_DEFAULT_ENGINE",
+      "default": "WHATSAPP_DEFAULT_ENGINE"
     }
   ],
   "supported_architectures": ["arm64", "amd64"],
