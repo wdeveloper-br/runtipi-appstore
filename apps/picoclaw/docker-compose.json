@@ -1,0 +1,23 @@
+{
+  "services": [
+    {
+      "name": "picoclaw",
+      "image": "sipeed/picoclaw:nightly-launcher",
+      "isMain": true,
+      "internalPort": 18800,
+      "environment": {
+        "PICOCLAW_GATEWAY_HOST": "0.0.0.0",
+        "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+        "DEEPSEEK_API_KEY": "${DEEPSEEK_API_KEY}",
+        "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+        "GOOGLE_API_KEY": "${GOOGLE_API_KEY}"
+      },
+      "volumes": [
+        {
+          "hostPath": "${APP_DATA_DIR}/data",
+          "containerPath": "/root/.picoclaw"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "name": "PicoClaw",
+  "id": "picoclaw",
+  "description": "Tiny, Fast, and Deployable anywhere — automate the mundane, unleash your creativity.",
+  "short_desc": "Ultra-Efficient AI Assistant in Go",
+  "available": true,
+  "exposable": true,
+  "dynamic_config": true,
+  "port": 18800,
+  "version": "v1.0.0",
+  "tipi_version": 3,
+  "categories": [
+    "utilities",
+    "ai"
+  ],
+  "author": "Sipeed",
+  "source": "https://github.com/sipeed/picoclaw",
+  "website": "https://picoclaw.io",
+  "supported_architectures": [
+    "arm64",
+    "amd64"
+  ],
+  "form_fields": [
+    {
+      "label": "OpenAI API Key",
+      "type": "password",
+      "env_variable": "OPENAI_API_KEY",
+      "required": false,
+      "hint": "Optional: Set if you want to use OpenAI models."
+    },
+    {
+      "label": "DeepSeek API Key",
+      "type": "password",
+      "env_variable": "DEEPSEEK_API_KEY",
+      "required": false,
+      "hint": "Optional: Set if you want to use DeepSeek models."
+    },
+    {
+      "label": "Anthropic API Key",
+      "type": "password",
+      "env_variable": "ANTHROPIC_API_KEY",
+      "required": false,
+      "hint": "Optional: Set if you want to use Anthropic (Claude) models."
+    },
+    {
+      "label": "Gemini API Key",
+      "type": "password",
+      "env_variable": "GOOGLE_API_KEY",
+      "required": false,
+      "hint": "Optional: Set if you want to use Google Gemini models."
+    }
+  ],
+  "created_at": 1742875200000,
+  "updated_at": 1742875200000
+}
